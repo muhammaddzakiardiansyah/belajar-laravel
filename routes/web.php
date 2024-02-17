@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/dzaki', function() {
@@ -27,6 +27,7 @@ Route::prefix('admin')->group(function() {
             "name" => "M Dzaki ardiansyah",
             "age" => 19,
             "id" => $id,
+            "data" => ['pisang', 'jambu', 'jeruk', 'kiwi']
         ]);
     });
 });
