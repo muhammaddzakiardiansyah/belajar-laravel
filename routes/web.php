@@ -14,21 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('HomePage', ["page" => 'Home']);
 });
-
-Route::get('/dzaki', function() {
-    return 'po';
+Route::get('/about', function() {
+    return view('AboutPage', ["page" => "About"]);
 });
-
-Route::prefix('admin')->group(function() {
-    Route::get('/about/{id}', function($id) {
-        return view('mainPage.index', [
-            "name" => "M Dzaki ardiansyah",
-            "age" => 19,
-            "id" => $id,
-            "data" => ['pisang', 'jambu', 'jeruk', 'kiwi']
-        ]);
-    });
-});
+// Route::prefix('admin')->group(function() {
+//     Route::get('/about/{id}', function($id) {
+//         return view('mainPage.index', [
+//             "name" => "M Dzaki ardiansyah",
+//             "age" => 19,
+//             "id" => $id,
+//             "data" => ['pisang', 'jambu', 'jeruk', 'kiwi']
+//         ]);
+//     });
+// });
 
