@@ -14,6 +14,19 @@
     height: 150px;
 }
 
+/* navbar */
+
+.nav-route {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 995px) {
+    .nav-route {
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 446px) {
 
     .main-card-job-vacancy {

@@ -13,7 +13,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item mb-3">
                         <a href="/job-vacancy/1" class="text-decoration-none text-dark">
-                            <div class="d-flex gap-3 main-card-job-vacancy justify-content-beetwen align-items-end mb-3">
+                            <div class="d-flex gap-3 main-card-job-vacancy justify-content-beetwen align-items-center mb-3">
                                <img src="{{ asset('images/loker.jpg') }}" class="rounded img-job-vacancy bg-primary" alt="loker">
                                <div class="card-body">
                                     <h4 class="card-title fw-bold mb-2">Google Company <span class="text-primary">✿</span></h4>
@@ -24,7 +24,7 @@
                     </li>
                     <li class="list-group-item mb-3">
                         <a href="/job-vacancy/2" class="text-decoration-none text-dark">
-                            <div class="d-flex gap-3 main-card-job-vacancy justify-content-beetwen align-items-end mb-3">
+                            <div class="d-flex gap-3 main-card-job-vacancy justify-content-beetwen align-items-center mb-3">
                                <img src="{{ asset('images/loker.jpg') }}" class="rounded img-job-vacancy bg-primary" alt="loker">
                                <div class="card-body">
                                     <h4 class="card-title fw-bold mb-2">Google Company <span class="text-primary">✿</span></h4>

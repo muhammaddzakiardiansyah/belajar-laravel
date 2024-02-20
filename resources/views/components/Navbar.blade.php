@@ -4,7 +4,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse ml-3" id="navbarNav">
+    <div class="collapse navbar-collapse ml-3 nav-route" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link {{ $page == 'Home' ? 'active' : ''}}" aria-current="page" href="/">Home</a>
@@ -19,7 +19,7 @@
           <a class="nav-link {{ $page == 'Contact' ? 'active' : ''}}" href="/contact">Contact</a>
         </li>
       </ul>
-      <ul class="navbar-nav d-flex justify-content-end">
+      <ul class="navbar-nav login">
         <li>
           <a href="/login" class="btn btn-sm btn-primary">Login</a>
         </li>
