@@ -19,6 +19,20 @@ Route::get('/', function () {
 Route::get('/about', function() {
     return view('AboutPage', ["page" => "About"]);
 });
+Route::get('/job-vacancy', function() {
+    return view('JobVacancy', ["page" => "Job Vacancy"]);
+});
+Route::get('/job-vacancy/{id}', function($id) {
+    return view('DetailJobVacancy', [
+        "page" => "Detail Job Vacancy",
+        "id" => $id,
+    ]);
+});
+Route::get('/login', function() {
+    return view('auth.AuthLogin', [
+        "page" => "Login"
+    ]);
+});
 // Route::prefix('admin')->group(function() {
 //     Route::get('/about/{id}', function($id) {
 //         return view('mainPage.index', [

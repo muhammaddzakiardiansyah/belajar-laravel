@@ -1,0 +1,31 @@
+/* page job vacancy */
+
+.card-job-vacancy {
+    width: 25rem;
+}
+
+.card-img-top {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.img-job-vacancy {
+    width: 200px;
+    height: 150px;
+}
+
+@media only screen and (max-width: 446px) {
+
+    .main-card-job-vacancy {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 799px) {
+    .card-job-vacancy {
+        display: none;
+    }
+}

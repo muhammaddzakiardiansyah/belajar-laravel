@@ -19,6 +19,11 @@
           <a class="nav-link {{ $page == 'Contact' ? 'active' : ''}}" href="/contact">Contact</a>
         </li>
       </ul>
+      <ul class="navbar-nav d-flex justify-content-end">
+        <li>
+          <a href="/login" class="btn btn-sm btn-primary">Login</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

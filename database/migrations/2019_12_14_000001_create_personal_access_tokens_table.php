@@ -20,6 +20,8 @@ return new class extends Migration
             $table->timestamp('last_used_at')->nullable();
             $table->timestamp('expires_at')->nullable();
             $table->timestamps();
+            // $table->unsignedBigInteger('nama_id');
+            // $table->foreign('nama_id')->reference('id')->on('post')->onDelete('restrict')
         });
     }
 
