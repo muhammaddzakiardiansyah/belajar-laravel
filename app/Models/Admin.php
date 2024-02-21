@@ -10,4 +10,8 @@ class Admin extends Model
     use HasFactory;
 
     protected $table = 'admins';
+
+    public function vacancy() {
+        return $this->hasMany(Vacancy::class);
+    }
 }

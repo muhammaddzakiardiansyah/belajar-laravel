@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VacancyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,15 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::controller(VacancyController::class)->group(function () {
+    Route::get('/job-vacancy', 'index')->name('job vacancy');
+});
+
 Route::get('/', function () {
     return view('HomePage', ["page" => 'Home']);
-});
+})->name('home');
 Route::get('/about', function() {
     return view('AboutPage', ["page" => "About"]);
-});
-Route::get('/job-vacancy', function() {
-    return view('JobVacancy', ["page" => "Job Vacancy"]);
-});
+})->middleware('auth');
+// Route::get('/job-vacancy', function() {
+//     return view('JobVacancy', ["page" => "Job Vacancy"]);
+// });
 Route::get('/job-vacancy/{id}', function($id) {
     return view('DetailJobVacancy', [
         "page" => "Detail Job Vacancy",

@@ -10,4 +10,8 @@ class Company extends Model
     use HasFactory;
 
     protected $table = 'companies';
+
+    public function vacancy() {
+        return $this->hasMany(Vacancy::class);
+    }
 }

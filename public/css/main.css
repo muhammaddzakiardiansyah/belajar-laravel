@@ -1,7 +1,7 @@
 /* page job vacancy */
 
 .card-job-vacancy {
-    width: 25rem;
+    width: 100%;
 }
 
 .card-img-top {
@@ -10,8 +10,24 @@
 }
 
 .img-job-vacancy {
-    width: 200px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+.body-job-vacancy {
+    width: 80%;
+}
+
+.body-job-vacancy .text-date {
+    font-size: small;
+    font-weight: 700;
+    color: rgb(150, 141, 141);
+}
+
+.body-job-vacancy .text-author {
+    font-size: small;
+    font-weight: 600;
+    color: rgb(138, 121, 121);
 }
 
 /* navbar */
@@ -33,6 +49,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .img-job-vacancy {
+        width: 70%;
+        height: 70%;
     }
 
 }
