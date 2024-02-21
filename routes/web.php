@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\VacancyController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,11 +34,9 @@ Route::get('/job-vacancy/{id}', function($id) {
         "id" => $id,
     ]);
 });
-Route::get('/login', function() {
-    return view('auth.AuthLogin', [
-        "page" => "Login"
-    ]);
-});
+
+Route::get('/login', [LoginController::class, 'index'])->name('login page');
+Route::post('/login', [LoginController::class, 'login'])->name('login');
 // Route::prefix('admin')->group(function() {
 //     Route::get('/about/{id}', function($id) {
 //         return view('mainPage.index', [

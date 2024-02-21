@@ -37,6 +37,29 @@
     justify-content: space-between;
 }
 
+/* login page */
+
+.login-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form .form {
+    width: 30%;
+}
+
+.login-form .form .btn-login {
+    margin-top: 30px;
+}
+
+.login-form .form .text-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(148, 140, 140);
+}
+
 @media only screen and (max-width: 995px) {
     .nav-route {
         display: block;

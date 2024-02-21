@@ -20,9 +20,25 @@
         </li>
       </ul>
       <ul class="navbar-nav login">
+        @auth
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ auth()->admin()->nama_admin }}
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </li>
+        @else
         <li>
           <a href="/login" class="btn btn-sm btn-primary">Login</a>
         </li>
+        @endauth
       </ul>
     </div>
   </div>
